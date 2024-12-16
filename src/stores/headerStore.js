@@ -9,7 +9,7 @@ export const useHeaderItemsStore = defineStore('headerItems', () => {
       id:1,
       text:'Horns',
       link:'/',
-      icon:'./src/assets/icons/logos/cream-horns.png',
+      icon:'assets/icons/logos/cream-horns.png',
       icon_dark:'./src/assets/icons/logos/red-horns.png',
       icon_description:'Phone',
       class_id:'Menu'
@@ -19,7 +19,7 @@ export const useHeaderItemsStore = defineStore('headerItems', () => {
       id:2,
       text:'About Horns',
       link:'/',
-      icon:'/assets/icons/logos/cream-horns.png',
+      icon:'assets/icons/logos/cream-horns.png',
       icon_dark:'/assets/icons/logos/red-horns.png',
       icon_description:'Tools',
       class_id:'About'
@@ -29,7 +29,7 @@ export const useHeaderItemsStore = defineStore('headerItems', () => {
       id:3,
       text:'Menu',
       link:'/',
-      icon:'/assets/icons/logos/cream-horns.png',
+      icon:'assets/icons/logos/cream-horns.png',
       icon_dark:'/assets/icons/logos/red-horns.png',
       icon_description:'12',
       class_id:'Works'
