@@ -9,8 +9,8 @@ export const useFooterItemsStore = defineStore('footerItems', () => {
 
         {
             id: 1,
-            icon: 'assets/assets/icons/footer/facebook-icon.svg',
-            icon_white: '/assets/icons/footer/facebook-white-icon.svg',
+            icon: 'assets/icons/footer/facebook-icon.svg',
+            icon_white: 'assets/icons/footer/facebook-white-icon.svg',
             link: '/',
             icon_description: 'Facebook'
         },
@@ -18,7 +18,7 @@ export const useFooterItemsStore = defineStore('footerItems', () => {
         {
             id: 2,
             icon: 'assets/icons/footer/twitter-icon.svg',
-            icon_white: '/assets/icons/footer/twitter-white-icon.svg',
+            icon_white: 'assets/icons/footer/twitter-white-icon.svg',
             link: '/',
             icon_description: 'Twitter'
         },
@@ -26,7 +26,7 @@ export const useFooterItemsStore = defineStore('footerItems', () => {
         {
             id: 3,
             icon: 'assets/icons/footer/instagram-icon.svg',
-            icon_white: '/assets/icons/footer/instagram-white-icon.svg',
+            icon_white: 'assets/icons/footer/instagram-white-icon.svg',
             link: '/',
             icon_description: 'Instagram'
         },
@@ -34,7 +34,7 @@ export const useFooterItemsStore = defineStore('footerItems', () => {
         {
             id: 4,
             icon: 'assets/icons/footer/youtube-icon.svg',
-            icon_white: '/assets/icons/footer/youtube-white-icon.svg',
+            icon_white: 'assets/icons/footer/youtube-white-icon.svg',
             link: '/',
             icon_description: 'Youtube'
         },
@@ -42,7 +42,7 @@ export const useFooterItemsStore = defineStore('footerItems', () => {
         {
             id: 5,
             icon: 'assets/icons/footer/google-sheets-icon.svg',
-            icon_white: '/assets/icons/footer/google-sheets-white-icon.svg',
+            icon_white: 'assets/icons/footer/google-sheets-white-icon.svg',
             link: '/',
             icon_description: 'Google sheets'
         },
@@ -50,7 +50,7 @@ export const useFooterItemsStore = defineStore('footerItems', () => {
         {
             id: 6,
             icon: 'assets/icons/footer/share-icon.svg',
-            icon_white: '/assets/icons/footer/share-white-icon.svg',
+            icon_white: 'assets/icons/footer/share-white-icon.svg',
             link: '/',
             icon_description: 'Share'
         },
