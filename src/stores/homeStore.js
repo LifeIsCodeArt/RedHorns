@@ -101,7 +101,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
           id:1,
           text:'Red Shot',
           author:'RED HORNS',
-          image: './src/assets/images/items/cup-red.png',
+          image: 'assets/images/items/cup-red.png',
           image_description:'Red Shot'
         },
 
@@ -109,7 +109,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
           id:2,
           text:"Deer's dream",
           author:'RED HORNS',
-          image: '@/assets/images/items/cup-red.png',
+          image: 'assets/images/items/cup-red.png',
           image_description:'Нитковий живопис #2'
         },
 
@@ -117,7 +117,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
           id:3,
           text:'Forest Energy',
           author:'RED HORNS',
-          image: '../src/assets/images/items/cup-red.png',
+          image: 'assets/images/items/cup-red.png',
           image_description:'Forest Energy'
         },
 
@@ -125,7 +125,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
           id:4,
           text:'Wild cappuccino',
           author:'RED HORNS',
-          image: '/assets/images/items/cup-red.png',
+          image: 'assets/images/items/cup-red.png',
           image_description:'Wild cappuccino'
         },
 
@@ -133,7 +133,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
           id:5,
           text:'Red Velvet Latte',
           author:'RED HORNS',
-          image: './src/assets/images/items/cup-red.png',
+          image: 'assets/images/items/cup-red.png',
           image_description:'Red Velvet Latte'
         },
 
@@ -141,21 +141,21 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
           id:6,
           text:'Forest Americano',
           author:'RED HORNS',
-          image: './src/assets/images/items/cup-red.png',
+          image: 'assets/images/items/cup-red.png',
           image_description:'Forest Americano'
         },
         {
           id:7,
           text:'Fiery Mocha',
           author:'RED HORNS',
-          image: './src/assets/images/items/cup-red.png',
+          image: 'assets/images/items/cup-red.png',
           image_description:'Fiery Mocha'
         },
         {
           id:8,
           text:'Deer\'s gold',
           author:'RED HORNS',
-          image: './src/assets/images/items/cup-red.png',
+          image: 'assets/images/items/cup-red.png',
           image_description:'Deer\'s gold'
         },
 
@@ -167,7 +167,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
             id:1,
             text:'Ice Red Energy',
             author:'RED HORNS',
-            image: './src/assets/images/items/cup-cream.png',
+            image: 'assets/images/items/cup-cream.png',
             image_description:'Ice Red Energy'
         },
 
@@ -175,7 +175,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
             id:2,
             text:"Horn's breeze",
             author:'RED HORNS',
-            image: './src/assets/images/items/cup-cream.png',
+            image: 'assets/images/items/cup-cream.png',
             image_description:'Horn\'s breeze'
         },
 
@@ -183,7 +183,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
             id:3,
             text:'Cranberry Spark',
             author:'RED HORNS',
-            image: './src/assets/images/items/cup-cream.png',
+            image: 'assets/images/items/cup-cream.png',
             image_description:'Cranberry Spark'
         },
 
@@ -191,7 +191,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
             id:4,
             text:'Choco Mint Bliss',
             author:'RED HORNS',
-            image: './src/assets/images/items/cup-cream.png',
+            image: 'assets/images/items/cup-cream.png',
             image_description:'Choco Mint Bliss'
         },
 
@@ -199,7 +199,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
             id:5,
             text:'Minted Coffee',
             author:'RED HORNS',
-            image: './src/assets/images/items/cup-cream.png',
+            image: 'assets/images/items/cup-cream.png',
             image_description:'Minted Coffee'
         },
 
@@ -207,21 +207,21 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
             id:6,
             text:'Maple Cream Fizz',
             author:'RED HORNS',
-            image: './src/assets/images/items/cup-cream.png',
+            image: 'assets/images/items/cup-cream.png',
             image_description:'Maple Cream Fizz'
         },
         {
             id:7,
             text:'Citrus Horn Cooler',
             author:'RED HORNS',
-            image: './src/assets/images/items/cup-cream.png',
+            image: 'assets/images/items/cup-cream.png',
             image_description:'Citrus Horn Cooler'
         },
         {
             id:8,
             text:'Espresso Tonic Wild',
             author:'RED HORNS',
-            image: './src/assets/images/items/cup-cream.png',
+            image: 'assets/images/items/cup-cream.png',
             image_description:'Espresso Tonic Wild'
         },
 
