@@ -10,7 +10,7 @@ export const useHeaderItemsStore = defineStore('headerItems', () => {
       text:'Horns',
       link:'/',
       icon:'assets/icons/logos/cream-horns.png',
-      icon_dark:'./src/assets/icons/logos/red-horns.png',
+      icon_dark:'src/assets/icons/logos/red-horns.png',
       icon_description:'Phone',
       class_id:'Menu'
     },
@@ -20,7 +20,7 @@ export const useHeaderItemsStore = defineStore('headerItems', () => {
       text:'About Horns',
       link:'/',
       icon:'assets/icons/logos/cream-horns.png',
-      icon_dark:'/assets/icons/logos/red-horns.png',
+      icon_dark:'assets/icons/logos/red-horns.png',
       icon_description:'Tools',
       class_id:'About'
     },
@@ -30,7 +30,7 @@ export const useHeaderItemsStore = defineStore('headerItems', () => {
       text:'Menu',
       link:'/',
       icon:'assets/icons/logos/cream-horns.png',
-      icon_dark:'/assets/icons/logos/red-horns.png',
+      icon_dark:'assets/icons/logos/red-horns.png',
       icon_description:'12',
       class_id:'Works'
     },
@@ -39,8 +39,8 @@ export const useHeaderItemsStore = defineStore('headerItems', () => {
       id:4,
       text:'Links',
       link:'/',
-      icon:'/assets/icons/logos/cream-horns.png',
-      icon_dark:'/assets/icons/logos/red-horns.png',
+      icon:'assets/icons/logos/cream-horns.png',
+      icon_dark:'assets/icons/logos/red-horns.png',
       icon_description:'11',
       class_id:'Links'
     },
