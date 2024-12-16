@@ -41,8 +41,8 @@ onMounted(() => {
     />
     <div class="flex flex-col mt-[18px]">
       <p
-          class="linear font-red_display font-semibold text-[22px] text-[#2A86E5] leading-[26.4px] tracking-[1.5px] max-xl:text-center pointer"
-          :class="darkTheme ? 'linear2' : 'linear'"
+          class="font-red_display font-semibold text-[22px] text-[#2A86E5] leading-[26.4px] tracking-[1.5px] max-xl:text-center pointer"
+          :class="darkTheme ? 'text-[#f5e1e2]' : 'text-[#bf3f42]'"
       >
         {{ item.text }}
       </p>
@@ -50,8 +50,8 @@ onMounted(() => {
         <div class="mr-[22px] flex">
           <img src="@/assets/icons/article/human.svg" alt="human icon" />
           <p
-              class="uppercase font-anton_regular font-semibold text-[18px] text-[#B3B3B1] leading-[14px] tracking-[0.5px] ml-[6px]"
-              :class="darkTheme ? 'linear2' : 'linear'"
+              class="uppercase font-anton_regular text-[18px] text-[#B3B3B1] leading-[14px] tracking-[0.5px] ml-[6px]"
+              :class="darkTheme ? 'text-[#f5e1e2]' : 'text-[#bf3f42]'"
           >
             {{ item.author }}
           </p>
