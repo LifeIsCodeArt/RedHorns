@@ -10,7 +10,7 @@ export const useHeaderItemsStore = defineStore('headerItems', () => {
       text:'Horns',
       link:'/',
       icon:'assets/icons/logos/cream-horns.png',
-      icon_dark:'src/assets/icons/logos/red-horns.png',
+      icon_dark:'assets/icons/logos/red-horns.png',
       icon_description:'Phone',
       class_id:'Menu'
     },
