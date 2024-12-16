@@ -9,7 +9,7 @@ export const useFooterItemsStore = defineStore('footerItems', () => {
 
         {
             id: 1,
-            icon: './src/assets/icons/footer/facebook-icon.svg',
+            icon: './srcgit fetch origin/assets/icons/footer/facebook-icon.svg',
             icon_white: './src/assets/icons/footer/facebook-white-icon.svg',
             link: '/',
             icon_description: 'Facebook'
