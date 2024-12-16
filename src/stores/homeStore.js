@@ -39,7 +39,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
 
         {
             id:2,
-            icon:'assets/icons/homepage-links/apple-icon.png',
+            icon:'@/assets/icons/homepage-links/apple-icon.png',
             link:'/',
             icon_description:'Apple Download',
             text:'iOS'
