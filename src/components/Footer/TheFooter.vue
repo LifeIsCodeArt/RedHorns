@@ -1,0 +1,98 @@
+<script setup>
+
+    import {useFooterItemsStore} from "@/stores/footerStore.js";
+    import {useHomeItemsStore} from "@/stores/homeStore.js";
+
+    import {computed} from "vue";
+
+    import Socials from '@/components/Footer/footerSocials.vue'
+    import FooterList from '@/components/Footer/footerList.vue'
+
+
+
+    const socials = (computed(()=>useFooterItemsStore().socialLinks))
+
+    const items = computed(()=>useFooterItemsStore().footerList)
+
+    const darkTheme = (computed(()=> useHomeItemsStore().themeCheck))
+
+</script>
+
+
+<template>
+
+    <div id="Links" class="w-full px-[28px] py-[28px] max-xl:my-0 max-xl:mx-auto max-xl:px-[20px] max-md:py-[20px] max-xsm:w-[375px]" :class="darkTheme ? 'bg-[#0E1219]' : 'bg-[#f5e1e2]'">
+
+        <div class="background rounded-xl h-auto py-[20px] pl-[347px] flex max-xl:flex-col max-xl:items-center max-xl:px-[30px] max-xl:pt-[30px] max-xl:pb-[40px] max-md:pl-[15px]">
+
+            <div class=" h-auto w-[351px] pt-[84.5px] pb-[21px] rounded-2xl pl-[30px] max-xl:flex max-xl:flex-col max-xl:items-center max-xl:w-full  shadow-[0_3px_10px_rgb(0,0,0,0.2)] max-md:w-[310px] max-xsm:ml-[14px]"
+                 :class="darkTheme ? 'bg-[#0E1219]' : 'bg-[#f5e1e2]'">
+
+                <div class="text-center text-black text-[30px] font-anton_regular font-normal leading-[23px] tracking-[0.5px] pr-[20px]" :class="darkTheme ? 'text-white pr-12' : 'text-black'">
+
+                  <img v-if="darkTheme" src="@/assets/icons/logos/mask-group-1.png" alt="red horns logo" class="">
+
+                  <img v-else src="@/assets/icons/logos/red-horns-3.png" alt="red horns logo" class="mr-12">
+
+                </div>
+
+
+                <div class="mt-[65.6px] mb-[35px]">
+
+                    <p class="linear text-[16px] font-anton_regular font-normal leading-[23px] tracking-[0.5px] w-[282px] max-xl:w-[524px] max-xl:text-center max-md:w-[253px] max-md:pr-[14px] max-md:text-left"
+                       :class="darkTheme ? 'bg-black' : 'bg-[#f5e1e2]'">
+
+                       <span class="mb-[12px] block">Lorem Ipsum is simply simply</span>
+                        when an unknown printer took a
+                        galley of type and scrambled it to
+                        make a type specimen book. It has
+                        survived not only five
+
+                    </p>
+
+                </div>
+
+                <div class="flex justify-end items-center ml-[28px] mr-[58px] max-md:ml-[41px]">
+
+                    <Socials v-for="item in socials" :item="item" :key="item.id" />
+
+
+                </div>
+
+            </div>
+
+
+            <div class="flex flex-col  ml-[70px] mt-[50px] max-xl:ml-0 max-xl:mt-[30px]">
+
+                <div class="flex mb-[66px] max-xl:justify-between max-xl:mb-[32px] max-md:flex-col max-md:items-center">
+
+                    <FooterList v-for="item in items" :item="item" :key="item.id"  />
+
+                </div>
+
+                <p class="text-white pl-[20px] text-[13px] font-red_display italic font-thin leading-[17px] tracking-[0.5px] max-xl:text-center">
+
+                    Copyright © 2024. Burnazov Artem.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</template>
+
+<style scoped>
+    .background{
+      background: -webkit-linear-gradient(90deg, #401516 0%, #bf3f42 60%,  #ff5458 100%);
+    }
+
+    .linear {
+      background: -webkit-linear-gradient(90deg, #401516 0%, #bf3f42 60%,  #ff5458 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+</style>
