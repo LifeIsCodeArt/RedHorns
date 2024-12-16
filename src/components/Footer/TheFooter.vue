@@ -39,8 +39,8 @@
 
                 <div class="mt-[65.6px] mb-[35px]">
 
-                    <p class="linear text-[16px] font-anton_regular font-normal leading-[23px] tracking-[0.5px] w-[282px] max-xl:w-[524px] max-xl:text-center max-md:w-[253px] max-md:pr-[14px] max-md:text-left"
-                       :class="darkTheme ? 'bg-black' : 'bg-[#f5e1e2]'">
+                    <p class="text-[16px] font-anton_regular font-normal leading-[23px] tracking-[0.5px] w-[282px] max-xl:w-[524px] max-xl:text-center max-md:w-[253px] max-md:pr-[14px] max-md:text-left"
+                       :class="darkTheme ? ' text-[#f5e1e2]' : ' text-[#bf3f42]'">
 
                        <span class="mb-[12px] block">Lorem Ipsum is simply simply</span>
                         when an unknown printer took a
