@@ -109,7 +109,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
           id:2,
           text:"Deer's dream",
           author:'RED HORNS',
-          image: './src/assets/images/items/cup-red.png',
+          image: '@/assets/images/items/cup-red.png',
           image_description:'Нитковий живопис #2'
         },
 
@@ -117,7 +117,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
           id:3,
           text:'Forest Energy',
           author:'RED HORNS',
-          image: './src/assets/images/items/cup-red.png',
+          image: '../src/assets/images/items/cup-red.png',
           image_description:'Forest Energy'
         },
 
@@ -125,7 +125,7 @@ export const useHomeItemsStore = defineStore('homeItems', () => {
           id:4,
           text:'Wild cappuccino',
           author:'RED HORNS',
-          image: './src/assets/images/items/cup-red.png',
+          image: '/assets/images/items/cup-red.png',
           image_description:'Wild cappuccino'
         },
 
