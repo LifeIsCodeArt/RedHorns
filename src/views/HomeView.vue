@@ -2,7 +2,6 @@
 import {useHomeItemsStore} from '@/stores/homeStore.js'
 import BioRada from "@/components/HomePage/bioRada.vue";
 import Article from '@/components/HomePage/article.vue'
-import SideIcon from '@/components/HomePage/sideBarIcon.vue'
 
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 
@@ -50,36 +49,36 @@ onBeforeUnmount(() => {
   <div class="fixed top-0 left-0 w-full h-full bg-gray-500 opacity-80 z-50" v-if="isModalVisible" @click="isModalVisible = !isModalVisible"></div>
 
   <div
-      class="fixed flex flex-col font-anton_regular items-center justify-between top-[9%] left-1/3 max-2xl:left-[31%] max-xl:left-[20%] max-1lg:left-[13%] max-1lg:top-[5%] max-xsm:left-[5%] max-xsm:top-[7%] transform -translate-x-1/2 z-[51] w-[90%] max-w-[600px] h-auto max-h-[90%] py-[12px] rounded-2xl space-y-6 overflow-y-auto shadow-lg px-[10px]"
+      class="fixed flex flex-col font-inter items-center justify-between top-[9%] left-1/3 max-2xl:left-[31%] max-xl:left-[20%] max-1lg:left-[13%] max-1lg:top-[5%] max-xsm:left-[5%] max-xsm:top-[7%] transform -translate-x-1/2 z-[51] w-[90%] max-w-[600px] h-auto max-h-[90%] py-[22px] rounded-2xl space-y-8 overflow-y-auto shadow-lg px-[20px]"
       v-if="isModalVisible"
       :class="darkTheme ? 'background-card-1' : 'background-card-2'"
       :style="{
     animation: isModalVisible ? 'flyIn 1.0s ease-in-out forwards' : ''
   }"
   >
-    <h1 class="text-2xl font-bold text-center tracking-[2px]" :class="darkTheme ? 'text-[#f5e1e2]' : 'text-[#bf3f42]'">Magical {{selectedArticle.text}} Brewing Method</h1>
+    <h1 class="text-2xl font-bold text-center tracking-[1px]" :class="darkTheme ? 'text-[#f5e1e2]' : 'text-[#bf3f42]'">Magical {{selectedArticle.text}} Brewing Method</h1>
 
-    <div class="space-y-4" :class="darkTheme ? 'text-[#f5e1e2]' : 'text-[#bf3f42]'">
-      <h2 class="text-lg font-semibold tracking-[2px]">Description:</h2>
-      <p class="text-sm leading-relaxed font-red_display">
+    <div class="space-y-1" :class="darkTheme ? 'text-[#f5e1e2]' : 'text-[#bf3f42]'">
+      <h2 class="text-lg font-black tracking-[2px]">Description:</h2>
+      <p class="text-sm leading-relaxed font-inter">
         Magical coffee isn’t just a drink; it’s a ritual that awakens inspiration and energy.
         It unveils unique flavor nuances and brings warmth to even the coldest mornings.
         This method suits any type of coffee beans and reflects your personal mood and intentions.
       </p>
     </div>
 
-    <div class="space-y-4" :class="darkTheme ? 'text-[#f5e1e2]' : 'text-[#bf3f42]'">
-      <h2 class="text-lg font-semibold tracking-[2px]">Ingredients:</h2>
-      <ul class="list-disc list-inside text-sm leading-relaxed font-red_display">
+    <div class="space-y-1" :class="darkTheme ? 'text-[#f5e1e2]' : 'text-[#bf3f42]'">
+      <h2 class="text-lg font-black tracking-[1px]">Ingredients:</h2>
+      <ul class="list-disc list-inside text-sm leading-relaxed font-inter">
         <li><strong>Coffee beans</strong> — freshly ground to preserve the aroma. Choose your flavor: vibrant fruity notes or rich chocolate undertones.</li>
         <li><strong>Water</strong> — clean and filtered, heated to the ideal temperature (92–96°C).</li>
         <li><strong>Heart and intention</strong> — the secret ingredient.</li>
       </ul>
     </div>
 
-    <div class="space-y-4" :class="darkTheme ? 'text-[#f5e1e2]' : 'text-[#bf3f42]'">
-      <h2 class="text-lg font-semibold tracking-[2px]">Brewing Method:</h2>
-      <ol class="list-decimal list-inside text-sm leading-relaxed space-y-2 font-red_display">
+    <div class="space-y-1" :class="darkTheme ? 'text-[#f5e1e2]' : 'text-[#bf3f42]'">
+      <h2 class="text-lg font-black tracking-[2px]">Brewing Method:</h2>
+      <ol class="list-decimal list-inside text-sm leading-relaxed space-y-2 font-inter">
         <li><strong>Preparation:</strong> Find a quiet space where you can immerse yourself in the process. Treat this as your personal ritual. Warm your brewing device.</li>
         <li><strong>Measure:</strong> Use 1–2 tablespoons (about 10–15 g) of freshly ground coffee per cup. Adjust to your taste.</li>
         <li><strong>Brewing:</strong> Slowly pour hot water over the coffee, using circular motions for even saturation. If using a cezve, heat gently until it foams 2–3 times.</li>
@@ -88,9 +87,9 @@ onBeforeUnmount(() => {
       </ol>
     </div>
 
-    <div class="space-y-4" :class="darkTheme ? 'text-[#f5e1e2]' : 'text-[#bf3f42]'">
-      <h2 class="text-lg font-semibold tracking-[2px]">The Ritual of Enjoyment:</h2>
-      <p class="text-sm leading-relaxed font-red_display">
+    <div class="space-y-1" :class="darkTheme ? 'text-[#f5e1e2]' : 'text-[#bf3f42]'">
+      <h2 class="text-lg font-black tracking-[1px]">The Ritual of Enjoyment:</h2>
+      <p class="text-sm leading-relaxed font-inter">
         Before your first sip, close your eyes and take in the aroma. Let it fill you with inspiration. Drink slowly, savoring every sip. Feel the magic unfold.
       </p>
     </div>
@@ -107,7 +106,7 @@ onBeforeUnmount(() => {
         <div>
 
           <div id="Menu" class="text-[14px] leading-[18px] tracking-[0.5px] font-anton_regular font-bold flex items-center align-baseline max-md:block  max-md:text-center max-md:h-[36px] max-md:w-full max-xl:pl-[20px] max-xsm:pl-0 max-xsm:w-[200px]"
-               :class="darkTheme ? 'text-[#bf3f42]' :'text-[#bf3f42]'">
+               :class="darkTheme ? 'text-[#f9eded]' :'text-[#bf3f42]'">
             Головна  <span class="pt-[1px] px-[4px] h-[18px]">></span>
 
             <span class="font-normal text-center w-auto h-[18px]"> Red Horns</span>
@@ -117,7 +116,7 @@ onBeforeUnmount(() => {
           <bio-rada class="mb-40"/>
 
           <h1 class=" uppercase text-[42px] leading-[54px] tracking-[1.5px] font-anton_regular font-black max-md:text-center max-md:text-[35px] max-md:leading-[45.5px] max-xl:w-full max-xl:text-center max-xsm:w-[360px] max-xsm:text-[28px]"
-              :class="darkTheme ? 'text-[#f5e1e2]' :'text-[#bf3f42]'">
+              :class="darkTheme ? 'text-[#f9eded]' :'text-[#bf3f42]'">
 
             Our coffee - your power
 
@@ -128,26 +127,26 @@ onBeforeUnmount(() => {
 
         </div>
 
-        <div id="About" class="text-[20px] text-[#707070] leading-[32px]
-        tracking-[0.5px] font-red_display font-semibold mt-[30px] mb-[60px] max-xl:w-full max-xl:text-center max-1lg:w-[700px] max-xsm:w-[360px] max-1lg:text-left"
-             :class="darkTheme ? 'text-[#f5e1e2]' :'text-[#bf3f42]'">
+        <div id="About" class="text-[20px] text-[#707070]
+        tracking-[0.5px] font-inter font-normal mt-[30px] mb-[60px] max-xl:w-full max-xl:text-center max-1lg:w-[700px] max-xsm:w-[360px] max-1lg:text-left"
+             :class="darkTheme ? 'text-[#f9eded]' :'text-[#bf3f42]'">
 
-          Step into a world where every cup fuels your ambition and awakens your spirit.<br><br>
+          Step into a world where every cup fuels your ambition and awakens your spirit.
 
-          At Red Horns, we believe coffee is more than just a drink — it’s your daily boost, your moment of focus, and your spark of energy.<br><br>
+          At Red Horns, we believe coffee is more than just a drink — it’s your daily boost, your moment of focus, and your spark of energy.
 
-          To charging everyone with energy and inspiration by creating<br><br>
+          To charging everyone with energy and inspiration by creating
 
-          an atmosphere of freedom, creativity and strength, what a pleasure<br><br>
+          an atmosphere of freedom, creativity and strength, what a pleasure
 
-          conquer the day and feel unique.<br><br>
+          conquer the day and feel unique.
 
           Whether you're chasing dreams, conquering goals, or simply recharging, our expertly crafted drinks are here to power your journey.
 
         </div>
 
         <h1 class=" uppercase text-[42px] leading-[54px] tracking-[1.5px] font-anton_regular font-black max-md:text-center max-md:text-[35px] max-md:leading-[45.5px] max-xl:w-full max-xl:text-center max-xsm:w-[360px] max-xsm:text-[28px]"
-            :class="darkTheme ? 'text-[#f5e1e2]' :'text-[#bf3f42]'">
+            :class="darkTheme ? 'text-[#f9eded]' :'text-[#bf3f42]'">
 
           Coffee magic
 
@@ -156,19 +155,14 @@ onBeforeUnmount(() => {
         <div class="w-[235px] h-[8px] rounded-3xl mt-[9px] max-xl:ml-[370px] max-1lg:ml-[245px] max-xsm:ml-[95px] max-xsm:w-[180px]"
              :class="darkTheme ? 'background2' : 'background'"></div>
 
-        <div id="About" class="text-[20px] text-[#707070] leading-[32px] tracking-[0.5px] font-red_display font-semibold mt-[30px] mb-[60px] max-xl:w-full max-xl:text-center max-1lg:w-[700px] max-xsm:w-[356px] max-1lg:text-left"
-             :class="darkTheme ? 'text-[#f5e1e2]' :'text-[#bf3f42]'">
+        <div id="About" class="text-[20px] text-[#707070] leading-[32px] tracking-[0.5px] font-inter font-normal mt-[30px] mb-[60px] max-xl:w-full max-xl:text-center max-1lg:w-[700px] max-xsm:w-[356px] max-1lg:text-left"
+             :class="darkTheme ? 'text-[#f9eded]' :'text-[#bf3f42]'">
 
-          Our baristas are not just coffee makers—they’re coffee artists. <br><br>
-
-          With years of experience, exceptional skill, and a genuine love for coffee, they transform premium beans into masterpieces. <br><br>
-
-          Friendly, attentive, and always smiling, our team is here to recommend the perfect blend to suit your mood. <br><br>
-
-          Every cup they serve is a reflection of their dedication and craftsmanship.<br><br>
-
-          Come for the coffee, stay for the people. Let us make your day unforgettable—one cup at a time.<br><br>
-
+          Our baristas are not just coffee makers—they’re coffee artists.
+          With years of experience, exceptional skill, and a genuine love for coffee, they transform premium beans into masterpieces.
+          Friendly, attentive, and always smiling, our team is here to recommend the perfect blend to suit your mood.
+          Every cup they serve is a reflection of their dedication and craftsmanship.
+          Come for the coffee, stay for the people. Let us make your day unforgettable—one cup at a time.
           Whether you're chasing dreams, conquering goals, or simply recharging, our expertly crafted drinks are here to power your journey.
 
         </div>
@@ -180,7 +174,7 @@ onBeforeUnmount(() => {
             <div class="relative flex flex-col mb-[20px]">
 
               <h2 class=" uppercase text-center text-[42px] leading-[54px] tracking-[0.5px] font-anton_regular font-black max-md:text-center max-md:text-[35px] max-md:leading-[45.5px] max-xsm:w-[360px] max-xsm:text-[28px]"
-                  :class="darkTheme ? 'text-[#f5e1e2]' :'text-[#bf3f42]'">
+                  :class="darkTheme ? 'text-[#f9eded]' :'text-[#bf3f42]'">
                 Menu
               </h2>
 
@@ -196,17 +190,15 @@ onBeforeUnmount(() => {
               </div>
 
 
-              <div class="font-red_display font-semibold text-center align-middle w-full max-xsm:w-[340px]"
-                   :class="darkTheme ? 'text-[#f5e1e2]' :'text-[#bf3f42]'">
-                Hey, checkout our new menu!<br><br>
+              <div class="font-inter font-normal text-center align-middle w-full max-xsm:w-[340px]"
+                   :class="darkTheme ? 'text-[#f9eded]' :'text-[#bf3f42]'">
 
-                <span>🔥 Hot drinks to warm your day:<br><br>
-                From the rich Red Velvet Latte to the energizing Forest Energy and classic Wild Cappuccino,<br> we've crafted the perfect lineup of cozy flavors.<br><br></span>
+                <p class="text-left mb-16"> <span class="block mb-2 text-center font-black">🔥 Hot drinks to warm your day:<br></span>
+                From the rich Red Velvet Latte to the energizing Forest Energy and classic Wild Cappuccino,<br> we've crafted the perfect lineup of cozy flavors.<br><br></p>
 
-                <span class="" :class="darkTheme ? 'linear4' :'linear3'">❄️ Cold drinks to keep you refreshed:<br><br>
-                Cool down with our signature Ice Red Energy, refreshing Citrus Horn Cooler,<br> or creamy Maple Cream Fizz — perfect for any mood.<br><br></span>
+                <p class="text-left" :class="darkTheme ? 'linear4' :'linear3'"><span class="block mb-2 text-center font-black">❄️ Cold drinks to keep you refreshed:<br></span>
+                Cool down with our signature Ice Red Energy, refreshing Citrus Horn Cooler,<br> or creamy Maple Cream Fizz — perfect for any mood.<br><br></p>
 
-                Come discover your new favorite drink at Red Horns!<br><br>
               </div>
 
               <div class="pb-[45px]">
@@ -221,7 +213,7 @@ onBeforeUnmount(() => {
           <div id="Works" class="relative flex flex-col my-12">
 
             <h3 class=" uppercase text-center text-[36px] leading-[54px] tracking-[0.5px] font-anton_regular font-black max-md:text-center max-md:text-[35px] max-md:leading-[45.5px] max-xsm:w-[360px] max-xsm:text-[28px]"
-                :class="darkTheme ? 'text-[#f5e1e2]' :'text-[#bf3f42]'">
+                :class="darkTheme ? 'text-[#f9eded]' :'text-[#bf3f42]'">
               Hot drinks
             </h3>
 
@@ -241,7 +233,7 @@ onBeforeUnmount(() => {
           <div class="relative flex flex-col my-12">
 
             <h3 class=" uppercase text-center text-[36px] leading-[54px] tracking-[0.5px] font-anton_regular font-black max-md:text-center max-md:text-[35px] max-md:leading-[45.5px] max-xsm:w-[360px] max-xsm:text-[28px]"
-                :class="darkTheme ? 'text-[#f5e1e2]' :'text-[#bf3f42]'">
+                :class="darkTheme ? 'text-[#f9eded]' :'text-[#bf3f42]'">
               Cold drinks
             </h3>
 
@@ -292,7 +284,7 @@ onBeforeUnmount(() => {
 }
 
 .background-card-1{
-  background: #bf3f42;
+  background: #401516;
 }
 
 .background-card-2{
@@ -300,7 +292,7 @@ onBeforeUnmount(() => {
 }
 
 .linear2 {
-  color: #f5e1e2;
+  color: #f7e7e8;
 }
 
 .linear3 {

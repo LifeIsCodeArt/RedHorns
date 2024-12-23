@@ -83,7 +83,7 @@ const scrollToSection = (sectionId) => {
     }
 
     .background2 {
-      background: linear-gradient(90deg, #f5e1e2 0%, #e9bfc0 60%, #d99a9b 100%);
+      background: linear-gradient(90deg, #f5e1e2 100%, #e9bfc0 60%, #f5e1e2 100%);
     }
 
 </style>

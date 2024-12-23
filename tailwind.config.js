@@ -52,6 +52,7 @@ module.exports = {
       fontFamily: {
         red_display: ['Red Hat Display', 'sans-serif'],
         anton_regular: ['Anton', 'sans-serif'],
+        inter: ['Inter', 'serif']
       },
       backgroundImage: {
         'mainImage': 'url(@/assets/images/app/app-bg.png)',
